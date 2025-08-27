@@ -75,7 +75,7 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        Base {
+        BASE {
             bindings = <
                  &kp Q  &kp W  &kp F                &kp P   &kp B                       &kp J      &kp L   &kp U      &kp Y    &kp SEMI
                  &kp A  &kp R  &kp S                &kp T   &kp G                       &kp M      &kp N   &kp E      &kp I    &kp O
@@ -84,7 +84,7 @@
             >;
         };
 
-        Game {
+        GAME {
             bindings = <
         &kp T      &kp Q  &kp W   &kp E   &kp R        &kp Y      &kp U   &kp I      &kp O    &kp P
         &kp LSHFT  &kp A  &kp S   &kp D   &kp F        &kp H      &kp J   &kp K      &kp L    &kp SEMI
@@ -93,7 +93,7 @@
             >;
         };
 
-        Numpad {
+        NUMPAD {
             bindings = <
                  &kp ASTERISK  &kp N7  &kp N8   &kp N9  &kp PLUS     &none  &kp F1  &kp F2   &kp F3   &kp F4
                  &kp ENTER     &kp N4  &kp N5   &kp N6  &kp EQUAL    &none  &kp F5  &kp F6   &kp F7   &kp F8
@@ -102,7 +102,7 @@
             >;
         };
 
-        layer_3 {
+        MOUSE {
             bindings = <
                  &none         &kp F3          &mmv MOVE_UP                   &mkp MB3                   &mkp RCLK    &none   &none           &none        &none       &none
                  &mkp MB4      &mmv MOVE_LEFT  &mmv MOVE_DOWN                 &mmv MOVE_RIGHT            &mkp MB5     &kp F3  &mkp MB1        &mkp MB2     &mkp MB3    &mmv MOVE_X(-400)
@@ -111,7 +111,7 @@
             >;
         };
 
-        Numbers {
+        NUMBER {
             bindings = <
            &kp LS(N1)    &kp LS(N2)     &kp LS(N3)                     &kp LS(N4)                 &kp LS(N5)    &kp LS(N6)       &kp LS(N7)    &kp LS(N8)    &kp LS(N9)    &kp LS(N0)
            &kp N1        &kp N2         &kp N3                         &kp N4                     &kp N5        &kp N6           &kp N7        &kp N8        &kp N9        &kp N0
@@ -120,7 +120,7 @@
             >;
         };
 
-        layer_5 {
+        BRACKET {
             bindings = <
                  &kp TILDE      &kp PIPE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &none        &kp PRINTSCREEN  &none         &kp UP_ARROW  &none      &none
                  &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none        &kp PG_UP        &kp LEFT      &kp DOWN      &kp RIGHT  &kp LC(LA(LEFT_GUI))
