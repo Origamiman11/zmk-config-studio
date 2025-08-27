@@ -77,10 +77,10 @@
 
         BASE {
             bindings = <
-                 &kp Q  &kp W  &kp F                &kp P   &kp B                       &kp J      &kp L   &kp U      &kp Y    &kp SEMI
-                 &kp A  &kp R  &kp S                &kp T   &kp G                       &kp M      &kp N   &kp E      &kp I    &kp O
-&mt LS(TAB) TAB  &kp Z  &kp X  &kp C                &kp D   &kp V                       &kp K      &kp H   &kp COMMA  &kp DOT  &kp LALT  &mt LCTRL SQT
-                               &mt LEFT_GUI ESCAPE  &trans  &mt LEFT_SHIFT BACKSPACE    &kp SPACE  &trans  &trans
+                 &kp Q  &kp W  &kp F                &kp P  &kp B                       &kp J      &kp L        &kp U      &kp Y    &kp SEMI
+                 &kp A  &kp R  &kp S                &kp T  &kp G                       &kp M      &kp N        &kp E      &kp I    &kp O
+&mt LS(TAB) TAB  &kp Z  &kp X  &kp C                &kp D  &kp V                       &kp K      &kp H        &kp COMMA  &kp DOT  &kp LALT  &mt LCTRL SQT
+                               &mt LEFT_GUI ESCAPE  &mo 4  &mt LEFT_SHIFT BACKSPACE    &kp SPACE  &lt 5 ENTER  &lt 3 TAB
             >;
         };
 
