@@ -62,7 +62,7 @@
 
         word_delete {
             bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <30 33>;
+            key-positions = <30 32>;
             layers = <0>;
         };
     };
@@ -77,10 +77,10 @@
 
         BASE {
             bindings = <
-       &kp Q  &kp W  &kp F  &kp P                     &kp B        &kp J        &kp L      &kp U          &kp Y         &kp SEMI
-       &kp A  &kp R  &kp S  &kp T                     &kp G        &kp M        &kp N      &kp E          &kp I         &kp O
-&kp Z  &kp X  &kp C  &kp D  &kp V                     &kp K        &kp H        &kp COMMA  &kp DOT        &kp LEFT_ALT  &mt LS(TAB) TAB  &mt LEFT_GUI ESCAPE
-                     &mo 4  &mt LEFT_SHIFT BACKSPACE  &kp SPACE    &lt 5 ENTER  &lt 3 TAB  &mt LCTRL SQT
+       &kp Q  &kp W  &kp F      &kp P           &kp B        &kp J        &kp L      &kp U          &kp Y         &kp SEMI
+       &kp A  &kp R  &kp S      &kp T           &kp G        &kp M        &kp N      &kp E          &kp I         &kp O
+&kp Z  &kp X  &kp C  &kp D      &kp V           &kp K        &kp H        &kp COMMA  &kp DOT        &kp LEFT_ALT  &mt LS(TAB) TAB  &mt LEFT_GUI ESCAPE
+                     &lt 4 DEL  &kp LEFT_SHIFT  &kp SPACE    &lt 5 ENTER  &lt 3 TAB  &mt LCTRL SQT
             >;
         };
 
