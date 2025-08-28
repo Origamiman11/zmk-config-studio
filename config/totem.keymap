@@ -89,6 +89,26 @@
         };
     };
 
+    behaviors {
+        Comma_exclamatino: Comma_exclamatino {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_EXCLAMATINO";
+            bindings = <&kp COMMA>, <&kp EXCLAMATION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        Period_Question: Period_Question {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PERIOD_QUESTION";
+            bindings = <&kp PERIOD>, <&kp QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -99,10 +119,10 @@
 
         BASE {
             bindings = <
-       &kp Q  &kp W  &kp F            &kp P           &kp B        &kp J        &kp L      &kp U          &kp Y         &kp SEMI
-       &kp A  &kp R  &kp S            &kp T           &kp G        &kp M        &kp N      &kp E          &kp I         &kp O
-&kp Z  &kp X  &kp C  &kp D            &kp V           &kp K        &kp H        &kp COMMA  &kp DOT        &kp LEFT_ALT  &mt LS(TAB) TAB  &mt LEFT_GUI ESCAPE
-                     &lt 5 BACKSPACE  &kp LEFT_SHIFT  &kp SPACE    &lt 6 ENTER  &lt 3 TAB  &mt LCTRL SQT
+       &kp Q  &kp W  &kp F            &kp P           &kp B        &kp J        &kp L               &kp U             &kp Y         &kp SEMI
+       &kp A  &kp R  &kp S            &kp T           &kp G        &kp M        &kp N               &kp E             &kp I         &kp O
+&kp Z  &kp X  &kp C  &kp D            &kp V           &kp K        &kp H        &Comma_exclamatino  &Period_Question  &kp LEFT_ALT  &mt LS(TAB) TAB  &mt LEFT_GUI ESCAPE
+                     &lt 5 BACKSPACE  &kp LEFT_SHIFT  &kp SPACE    &lt 6 ENTER  &lt 3 TAB           &mt LCTRL SQT
             >;
         };
 
