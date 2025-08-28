@@ -93,6 +93,12 @@
             bindings = <&sl 7>;
             key-positions = <34 36>;
         };
+
+        mute {
+            bindings = <&kp C_MUTE>;
+            key-positions = <27 26>;
+            layers = <6>;
+        };
     };
 
     behaviors {
@@ -109,6 +115,24 @@
             compatible = "zmk,behavior-mod-morph";
             label = "PERIOD_QUESTION";
             bindings = <&kp PERIOD>, <&kp QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        up_vol_brightness: up_vol_brightness {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UP_VOL_BRIGHTNESS";
+            bindings = <&kp C_VOLUME_UP>, <&kp C_BRIGHTNESS_INC>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        down_vol_bright: down_vol_bright {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOWN_VOL_BRIGHT";
+            bindings = <&kp C_VOL_DN>, <&kp C_BRIGHTNESS_DEC>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -179,10 +203,10 @@
 
         BRACKET {
             bindings = <
-           &kp TILDE             &kp PIPE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &none            &kp PRINTSCREEN  &none            &kp UP_ARROW    &none      &none
-           &kp LESS_THAN         &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none            &kp PG_UP        &kp LEFT         &kp DOWN        &kp RIGHT  &kp LC(LA(LEFT_GUI))
-&kp SLASH  &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp LCTRL              &kp PAGE_DOWN    &kp C_VOL_DN     &kp C_VOLUME_UP  &kp LEFT_SHIFT  &none      &mt LCTRL GRAVE       &kp LEFT_GUI
-                                                   &kp LEFT_ALT          &kp LEFT_SHIFT         &none            &trans           &none            &kp DELETE
+           &kp TILDE             &kp PIPE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &none            &kp PRINTSCREEN   &none               &kp UP_ARROW    &none      &none
+           &kp LESS_THAN         &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none            &kp PG_UP         &kp LEFT            &kp DOWN        &kp RIGHT  &kp LC(LA(LEFT_GUI))
+&kp SLASH  &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp LCTRL              &kp PAGE_DOWN    &down_vol_bright  &up_vol_brightness  &kp LEFT_SHIFT  &none      &mt LCTRL GRAVE       &kp LEFT_GUI
+                                                   &kp LEFT_ALT          &kp LEFT_SHIFT         &none            &trans            &none               &kp DELETE
             >;
         };
 
