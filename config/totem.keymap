@@ -164,6 +164,26 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <100>;
         };
+
+        minus_backslash: minus_backslash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MINUS_BACKSLASH";
+            bindings = <&kp MINUS>, <&kp SLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mt_idle_extra: mt_idle_extra {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_IDLE_EXTRA";
+            bindings = <&kp>, <&minus_backslash>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <200>;
+        };
     };
 
     keymap {
@@ -176,9 +196,9 @@
 
         BASE {
             bindings = <
-       &kp Q  &kp W  &kp F            &kp P           &kp B        &kp J        &kp L               &kp U               &kp Y         &kp SEMI
-       &kp A  &kp R  &kp S            &kp T           &kp G        &kp M        &kp N               &kp E               &kp I         &kp O
-&kp Z  &kp X  &kp C  &kp D            &kp V           &kp K        &kp H        &Comma_exclamatino  &Period_Question    &kp LEFT_ALT  &mt LS(TAB) TAB  &mt LEFT_GUI ESCAPE
+       &kp Q  &kp W  &kp F            &kp P           &kp B        &kp J        &kp L               &kp U               &kp Y                      &kp SEMI
+       &kp A  &kp R  &kp S            &kp T           &kp G        &kp M        &kp N               &kp E               &kp I                      &kp O
+&kp Z  &kp X  &kp C  &kp D            &kp V           &kp K        &kp H        &Comma_exclamatino  &Period_Question    &mt_idle_extra LEFT_ALT 0  &mt LS(TAB) TAB  &mt LEFT_GUI ESCAPE
                      &lt 5 BACKSPACE  &kp LEFT_SHIFT  &kp SPACE    &lt 6 ENTER  &lt 3 TAB           &mt_idle LCTRL SQT
             >;
         };
