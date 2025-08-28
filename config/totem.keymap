@@ -33,7 +33,7 @@
     x-input-code = <INPUT_REL_X>;
     y-input-code = <INPUT_REL_Y>;
     time-to-max-speed-ms = <300>;
-    acceleration-exponent = <1>;
+    acceleration-exponent = <0.5>;
 };
 
 &msc {
@@ -137,6 +137,16 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        pgup_window_swap: pgup_window_swap {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PGUP_WINDOW_SWAP";
+            bindings = <&kp PG_UP>, <&kp PERIOD>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
     };
 
     keymap {
@@ -203,10 +213,10 @@
 
         BRACKET {
             bindings = <
-           &kp TILDE             &kp PIPE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &none            &kp PRINTSCREEN   &none               &kp UP_ARROW    &none      &none
-           &kp LESS_THAN         &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none            &kp PG_UP         &kp LEFT            &kp DOWN        &kp RIGHT  &kp LC(LA(LEFT_GUI))
-&kp SLASH  &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp LCTRL              &kp PAGE_DOWN    &down_vol_bright  &up_vol_brightness  &kp LEFT_SHIFT  &none      &mt LCTRL GRAVE       &kp LEFT_GUI
-                                                   &kp LEFT_ALT          &kp LEFT_SHIFT         &none            &trans            &none               &kp DELETE
+           &kp TILDE             &kp PIPE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &none            &kp PRINTSCREEN    &none               &kp UP_ARROW    &none      &none
+           &kp LESS_THAN         &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none            &pgup_window_swap  &kp LEFT            &kp DOWN        &kp RIGHT  &kp LC(LA(LEFT_GUI))
+&kp SLASH  &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp LCTRL              &kp PAGE_DOWN    &down_vol_bright   &up_vol_brightness  &kp LEFT_SHIFT  &none      &mt LCTRL GRAVE       &kp LEFT_GUI
+                                                   &kp LEFT_ALT          &kp LEFT_SHIFT         &none            &trans             &none               &kp DELETE
             >;
         };
 
