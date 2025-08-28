@@ -153,6 +153,17 @@
             mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
             keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
         };
+
+        mt_idle: mt_idle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_IDLE";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            require-prior-idle-ms = <200>;
+            tapping-term-ms = <170>;
+            quick-tap-ms = <100>;
+        };
     };
 
     keymap {
@@ -165,10 +176,10 @@
 
         BASE {
             bindings = <
-       &kp Q  &kp W  &kp F            &kp P           &kp B        &kp J        &kp L               &kp U             &kp Y         &kp SEMI
-       &kp A  &kp R  &kp S            &kp T           &kp G        &kp M        &kp N               &kp E             &kp I         &kp O
-&kp Z  &kp X  &kp C  &kp D            &kp V           &kp K        &kp H        &Comma_exclamatino  &Period_Question  &kp LEFT_ALT  &mt LS(TAB) TAB  &mt LEFT_GUI ESCAPE
-                     &lt 5 BACKSPACE  &kp LEFT_SHIFT  &kp SPACE    &lt 6 ENTER  &lt 3 TAB           &mt LCTRL SQT
+       &kp Q  &kp W  &kp F            &kp P           &kp B        &kp J        &kp L               &kp U               &kp Y         &kp SEMI
+       &kp A  &kp R  &kp S            &kp T           &kp G        &kp M        &kp N               &kp E               &kp I         &kp O
+&kp Z  &kp X  &kp C  &kp D            &kp V           &kp K        &kp H        &Comma_exclamatino  &Period_Question    &kp LEFT_ALT  &mt LS(TAB) TAB  &mt LEFT_GUI ESCAPE
+                     &lt 5 BACKSPACE  &kp LEFT_SHIFT  &kp SPACE    &lt 6 ENTER  &lt 3 TAB           &mt_idle LCTRL SQT
             >;
         };
 
