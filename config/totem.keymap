@@ -104,10 +104,10 @@
 
         MOUSE {
             bindings = <
-                 &none         &kp F3          &mmv MOVE_UP                   &mkp MB3                   &mkp RCLK    &none   &none           &none        &none       &none
-                 &mkp MB4      &mmv MOVE_LEFT  &mmv MOVE_DOWN                 &mmv MOVE_RIGHT            &mkp MB5     &kp F3  &mkp MB1        &mkp MB2     &mkp MB3    &mmv MOVE_X(-400)
-&mt LS(TAB) TAB  &kp LC(LEFT)  &kp LC(RIGHT)   &mt LA(LC(LG(Q))) LS(LC(TAB))  &mt LA(LC(LG(E))) LC(TAB)  &none        &none   &kp C_PREVIOUS  &kp C_PAUSE  &kp C_NEXT  &none              &to 0
-                                               &mt LEFT_GUI ESCAPE            &mt LEFT_SHIFT R           &mkp LCLK    &none   &none           &none
+              &none          &kp F3                         &mmv MOVE_UP               &mkp MB3         &mkp RCLK    &none           &none        &none       &none     &none
+              &mkp MB4       &mmv MOVE_LEFT                 &mmv MOVE_DOWN             &mmv MOVE_RIGHT  &mkp MB5     &kp F3          &mkp MB1     &mkp MB2    &mkp MB3  &mmv MOVE_X(-400)
+&kp LC(LEFT)  &kp LC(RIGHT)  &mt LC(LA(LG(Q))) LS(LC(TAB))  &mt LA(LC(LG(E))) LC(TAB)  &none            &none        &kp C_PREVIOUS  &kp C_PAUSE  &kp C_NEXT  &none     &mt LEFT_GUI ESCAPE  &none
+                                                            &kp LSHIFT                 &mkp LCLK        &none        &none           &none        &to 0
             >;
         };
 
