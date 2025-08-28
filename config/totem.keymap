@@ -243,7 +243,7 @@
             bindings = <
               &kp LS(N1)     &kp LS(N2)                     &kp LS(N3)                 &kp LS(N4)              &kp LS(N5)         &kp LS(N6)    &kp LS(N7)    &kp LS(N8)    &kp LS(N9)  &kp LS(N0)
               &kp N1         &kp N2                         &kp N3                     &kp N4                  &kp N5             &kp N6        &kp N7        &kp N8        &kp N9      &kp N0
-&kp LC(LEFT)  &kp LC(RIGHT)  &mt LC(LA(LG(Q))) LS(LC(TAB))  &mt LC(LA(LG(E))) LC(TAB)  &kp LA(LC(LG(PERIOD)))  &kp SLASH          &kp MINUS     &kp PLUS      &kp ASTERISK  &kp CARET   &mt BACKSPACE UNDERSCORE  &none
+&kp LC(LEFT)  &kp LC(RIGHT)  &mt LC(LA(LG(Q))) LS(LC(TAB))  &mt LC(LA(LG(E))) LC(TAB)  &kp LA(LC(LG(PERIOD)))  &kp SLASH          &kp MINUS     &kp PLUS      &kp ASTERISK  &kp CARET   &mt BACKSPACE UNDERSCORE  &kp LG(LA(C))
                                                             &trans                     &none                   &mt LCTRL SPACE    &kp LEFT_ALT  &kp LEFT_GUI  &kp EQUAL
             >;
         };
