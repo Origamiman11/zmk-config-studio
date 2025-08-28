@@ -19,12 +19,33 @@
 #define SYM  2
 #define ADJ  3
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+
+#include <dt-bindings/zmk/pointing.h>
+
 &mt {
     quick-tap-ms = <100>;
     global-quick-tap;
     flavor = "tap-preferred";
     tapping-term-ms = <170>;
 };
+
+
+&mmv {
+    x-input-code = <INPUT_REL_X>;
+    y-input-code = <INPUT_REL_Y>;
+    time-to-max-speed-ms = <300>;
+    acceleration-exponent = <1>;
+};
+
+&msc {
+    x-input-code = <INPUT_REL_HWHEEL>;
+    y-input-code = <INPUT_REL_WHEEL>;
+    time-to-max-speed-ms = <300>;
+    acceleration-exponent = <0>;
+};
+
 
 / {
     combos {
