@@ -32,37 +32,37 @@
 
         mouse_on {
             bindings = <&to 3>;
-            key-positions = <32 33>;
+            key-positions = <32 31>;
             layers = <0>;
         };
 
         numpad_on {
             bindings = <&to 2>;
-            key-positions = <33 34>;
+            key-positions = <33 32>;
             layers = <0>;
         };
 
         game_on {
             bindings = <&to 1>;
-            key-positions = <32 34>;
+            key-positions = <33 31>;
             layers = <0>;
         };
 
         numpad_off {
             bindings = <&to 0>;
-            key-positions = <32 33>;
+            key-positions = <32 31>;
             layers = <2>;
         };
 
         mouse_off {
             bindings = <&to 0>;
-            key-positions = <32 33>;
+            key-positions = <32 31>;
             layers = <3>;
         };
 
         word_delete {
             bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <20 34>;
+            key-positions = <30 33>;
             layers = <0>;
         };
     };
