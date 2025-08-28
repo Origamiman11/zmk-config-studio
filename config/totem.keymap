@@ -33,7 +33,7 @@
     x-input-code = <INPUT_REL_X>;
     y-input-code = <INPUT_REL_Y>;
     time-to-max-speed-ms = <300>;
-    acceleration-exponent = <0.5>;
+    acceleration-exponent = <2>;
 };
 
 &msc {
