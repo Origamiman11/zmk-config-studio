@@ -123,7 +123,7 @@
         up_vol_brightness: up_vol_brightness {
             compatible = "zmk,behavior-mod-morph";
             label = "UP_VOL_BRIGHTNESS";
-            bindings = <&kp C_VOLUME_UP>, <&kp C_BRIGHTNESS_INC>;
+            bindings = <&kp C_VOLUME_UP>, <&kp F2>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -132,7 +132,7 @@
         down_vol_bright: down_vol_bright {
             compatible = "zmk,behavior-mod-morph";
             label = "DOWN_VOL_BRIGHT";
-            bindings = <&kp C_VOL_DN>, <&kp C_BRIGHTNESS_DEC>;
+            bindings = <&kp C_VOL_DN>, <&kp F1>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
