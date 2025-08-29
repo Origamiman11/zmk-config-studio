@@ -28,6 +28,7 @@
     flavor = "hold-preferred";
     tapping-term-ms = <170>;
     hold-trigger-on-release;
+    hold-trigger-key-positions = <20 21 10 0 1 11 22 2 12 23 24 13 3 4 25 14 32 33 34 5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31 35 36 37>;
 };
 
 &mmv {
