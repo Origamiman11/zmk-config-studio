@@ -43,6 +43,11 @@
     acceleration-exponent = <0>;
 };
 
+&sk {
+    quick-release;
+    release-after-ms = <500>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -68,17 +73,10 @@
             require-prior-idle-ms = <400>;
         };
 
-        numpad_off {
+        lt_off {
             bindings = <&to 0>;
             key-positions = <32 31>;
-            layers = <2>;
-            require-prior-idle-ms = <400>;
-        };
-
-        mouse_off {
-            bindings = <&to 0>;
-            key-positions = <32 31>;
-            layers = <3>;
+            layers = <3 1 2>;
             require-prior-idle-ms = <400>;
         };
 
@@ -199,7 +197,7 @@
        &kp Q  &kp W  &kp F            &kp P           &kp B        &kp J        &kp L               &kp U               &kp Y                      &kp SEMI
        &kp A  &kp R  &kp S            &kp T           &kp G        &kp M        &kp N               &kp E               &kp I                      &kp O
 &kp Z  &kp X  &kp C  &kp D            &kp V           &kp K        &kp H        &Comma_exclamatino  &Period_Question    &mt_idle_extra LEFT_ALT 0  &mt LS(TAB) TAB  &mt LEFT_GUI ESCAPE
-                     &lt 5 BACKSPACE  &kp LEFT_SHIFT  &kp SPACE    &lt 6 ENTER  &lt 3 TAB           &mt_idle LCTRL SQT
+                     &lt 5 BACKSPACE  &sk LEFT_SHIFT  &kp SPACE    &lt 6 ENTER  &lt 3 TAB           &mt_idle LCTRL SQT
             >;
         };
 
