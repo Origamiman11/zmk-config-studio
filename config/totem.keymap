@@ -83,7 +83,7 @@
         word_delete {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <30 32>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         cmd+shift {
