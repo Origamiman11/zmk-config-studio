@@ -61,7 +61,7 @@
 
         numpad_on {
             bindings = <&to 2>;
-            key-positions = <33 32>;
+            key-positions = <33 30>;
             layers = <0>;
             require-prior-idle-ms = <400>;
         };
@@ -212,10 +212,10 @@
 
         NUMPAD {
             bindings = <
-           &kp ASTERISK  &kp N7  &kp N8  &kp N9         &kp PLUS     &none   &kp F1   &kp F2   &kp F3   &kp F4
-           &kp ENTER     &kp N4  &kp N5  &kp N6         &kp EQUAL    &none   &kp F5   &kp F6   &kp F7   &kp F8
-&kp SLASH  &kp NUMBER_1  &kp N2  &kp N3  &kp MINUS      &none        &kp F9  &kp F10  &kp F11  &kp F12  &mt LS(TAB) TAB  &kp PERIOD
-                                 &kp N0  &kp BACKSPACE  &none        &to 0   &none    &to 0
+           &kp ASTERISK  &kp N7  &kp N8         &kp N9     &kp PLUS     &none   &kp F1   &kp F2   &kp F3   &kp F4
+           &kp ENTER     &kp N4  &kp N5         &kp N6     &kp EQUAL    &none   &kp F5   &kp F6   &kp F7   &kp F8
+&kp SLASH  &kp NUMBER_1  &kp N2  &kp N3         &kp MINUS  &none        &kp F9  &kp F10  &kp F11  &kp F12  &mt LS(TAB) TAB  &kp PERIOD
+                                 &kp BACKSPACE  &kp N0     &none        &to 0   &none    &to 0
             >;
         };
 
