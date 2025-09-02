@@ -14,7 +14,7 @@
 #define NAV  1
 #define SYM  2
 #define ADJ  3
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2500  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
 #include <behaviors.dtsi>
@@ -40,7 +40,7 @@
 &msc {
     x-input-code = <INPUT_REL_HWHEEL>;
     y-input-code = <INPUT_REL_WHEEL>;
-    time-to-max-speed-ms = <300>;
+    time-to-max-speed-ms = <500>;
     acceleration-exponent = <0>;
 };
 
