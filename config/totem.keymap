@@ -112,7 +112,7 @@
         };
 
         game_on {
-            bindings = <&to 1>;
+            bindings = <&to 2>;
             key-positions = <36 35>;
             require-prior-idle-ms = <400>;
             layers = <0>;
