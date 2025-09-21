@@ -73,8 +73,8 @@
             require-prior-idle-ms = <400>;
         };
 
-        game_on {
-            bindings = <&to 2>;
+        media_on {
+            bindings = <&to 1>;
             key-positions = <33 31>;
             layers = <0>;
             require-prior-idle-ms = <400>;
@@ -111,9 +111,9 @@
             layers = <7>;
         };
 
-        media_on {
+        game_on {
             bindings = <&to 1>;
-            key-positions = <32 33>;
+            key-positions = <36 35>;
             require-prior-idle-ms = <400>;
             layers = <0>;
         };
