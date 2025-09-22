@@ -217,10 +217,10 @@
 
         MEDIA {
             bindings = <
-       &none  &none     &kp UP_ARROW  &none      &none        &none  &none     &kp UP_ARROW  &none      &none
-       &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none        &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none
-&none  &none  &none     &none         &none      &none        &none  &none     &none         &none      &trans  &trans
-                        &none         &kp SPACE  &kp SPACE    &none  &none     &to 0
+       &none  &none     &kp UP_ARROW  &none      &none        &none   &none     &kp UP_ARROW  &none      &none
+       &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none        &none   &kp LEFT  &kp DOWN      &kp RIGHT  &none
+&none  &none  &none     &none         &none      &none        &none   &none     &none         &none      &trans  &trans
+                        &trans        &kp SPACE  &kp SPACE    &trans  &trans    &to 0
             >;
         };
 
