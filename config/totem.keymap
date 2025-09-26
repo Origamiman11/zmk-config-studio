@@ -51,7 +51,6 @@
 
 &lt {
     tapping-term-ms = <100>;
-    retro-tap;
     hold-while-undecided;
 };
 
