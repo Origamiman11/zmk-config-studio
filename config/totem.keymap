@@ -270,7 +270,7 @@
 
         BRACKET {
             bindings = <
-           &kp TILDE             &kp PIPE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &none            &kp PRINTSCREEN    &kp K_PREV          &kp UP_ARROW    &kp K_NEXT  &kp K_PLAY_PAUSE
+           &kp TILDE             &kp PIPE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &none            &kp PRINTSCREEN    &kp C_PREV          &kp UP_ARROW    &kp C_NEXT  &kp C_PLAY
            &kp LESS_THAN         &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none            &pgup_window_swap  &kp LEFT            &kp DOWN        &kp RIGHT   &kp LC(LA(LEFT_GUI))
 &kp SLASH  &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp LCTRL              &kp PAGE_DOWN    &down_vol_bright   &up_vol_brightness  &kp LEFT_SHIFT  &none       &mt LCTRL GRAVE       &kp LEFT_GUI
                                                    &kp LEFT_ALT          &kp LEFT_SHIFT         &none            &trans             &none               &kp DELETE
